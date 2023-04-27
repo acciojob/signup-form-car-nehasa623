@@ -7,32 +7,32 @@
 </head>
 
 <body>
-	<form >
+	<form method="post" >
 		<div>
-			<label for="name">Name</label>
+			<label for="name">Name*</label>
 		<input type="text" placeholder="name" id="name" required>
 		</div>
 		<div>
-		<label for="email">Email</label>
+		<label for="email">Email*</label>
 		<input type="Email" placeholder="email" id="email" required>	
 		</div>
 		<div>
-			<span>Gender:</span>
-			<label for="male">male</label>
-		<input type="radio" id="male" name="gender" required>
-			<label for="female">female</label>
-		<input type="radio" id="female" name="gender" required>
-			<label for="other">other</label>
-		<input type="radio" id="other" name="gender" required>
+			<label>Gender* </label>
+			<label for="gender_m">male</label>
+		<input type="radio" id="gender_m" name="gender" required>
+			<label for="gender_f">female</label>
+		<input type="radio" id="gender_f" name="gender" required>
+			
 		</div>
 		<div>
-			<span>Car Brands:</span>
-			<label for="BMW">BMW</label>
-			<input type="checkbox" id="BMW">
-			<label for="Audi">Audi</label>
-			<input type="checkbox" id="Audi">
-			<label for="Mercedez">Mercedez</label>
-			<input type="checkbox" id="Mercedez">
+			<label for="cars">Car Brands*</label>
+			<select id="cars" required>
+				<option value="option" disabled selected>--Please choose an option--</option>
+				<option value="BMW">BMW</option>
+				<option value="Audi">Audi</option>
+				<option value="Mercedez">Mercdez</option>
+				
+			</select>
 		</div>
 		<div>
 		<label for="age">Age</label>
@@ -51,10 +51,11 @@
 		<input type="password" placeholder="Password" id="Password"  required>	
 		</div>
 		<div>
-			<label for="checkbox">I agree to the TOS</label>
+			<label for="checkbox">Checkbox*</label>
 			<input type="checkbox" id="checkbox">
+			<label for="checkbox">I agree to the TOS</label>
 		</div>
-		<button>submit</button>
+		<button type="submit">submit</button>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
